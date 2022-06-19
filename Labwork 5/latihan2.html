@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sticky Navbar</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<h3>Program Studi Pendidikan Teknik Informatika dan Komputer UNS</h3>
+	</div>
+	<div id="navbar">
+		<a class="active" href="javascript:void(0)">HOME</a>
+		<a href="javascript:void(0)">PROFILE</a>
+		<a href="javascript:void(0)">ACADEMIC</a>
+		<a href="javascript:void(0)">ABOUT</a>
+		<a href="javascript:void(0)">PORTFOLIO</a>
+	</div>
+	<div class="video-container">
+		<iframe src="https://www.youtube.com/embed/ijdrsNmd1YE?autoplay=0&mute=1" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="content1">
+		<h2>Sticky Navigation Bar</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Netus et malesuada fames ac turpis egestas maecenas. Tempus egestas sed sed risus pretium quam vulputate. Est velit egestas dui id. Sem et tortor consequat id porta. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Sit amet dictum sit amet. Id aliquet lectus proin nibh nisl condimentum id. Velit scelerisque in dictum non consectetur. Arcu odio ut sem nulla pharetra diam sit. Ac placerat vestibulum lectus mauris. Semper eget duis at tellus at urna condimentum mattis. Habitant morbi tristique senectus et netus. Sed id semper risus in hendrerit gravida rutrum quisque non. Vitae turpis massa sed elementum tempus egestas sed. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. At in tellus integer feugiat scelerisque varius morbi enim nunc. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+		<p>Mauris cursus mattis molestie a iaculis at erat pellentesque. Penatibus et magnis dis parturient. Nam at lectus urna duis. Elit eget gravida cum sociis natoque. In vitae turpis massa sed elementum tempus egestas. Dui vivamus arcu felis bibendum. Turpis egestas maecenas pharetra convallis posuere. Semper auctor neque vitae tempus. Hac habitasse platea dictumst vestibulum rhoncus est. Purus semper eget duis at tellus at. Sit amet commodo nulla facilisi nullam vehicula ipsum a. Donec ultrices tincidunt arcu non sodales neque sodales.</p>
+	</div>
+	<script>
+	window.onscroll = function() {myFunction()};
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+	    navbar.classList.add("sticky")
+	  } else {
+	    navbar.classList.remove("sticky");
+	  }
+	}
+	</script>
+</body>
+</html>
